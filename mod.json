@@ -1,29 +1,30 @@
 {
-	"geode": "3.1.1",
-	"version": "v1.2.1",
-	"id": "capeling.icon_profile",
-	"name": "Icon Profile",
-	"repository": "https://github.com/Capeling/Icon-Profile-2.2",
-	"developer": "Capeling",
+	"geode": "4.3.1",
 	"gd": {
-		"win": "2.206",
-		"android": "2.206",
-		"mac": "2.206"
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
 	},
-	"description": "Replaces the Main Menu Profile Sprite with your icon!",
-	"incompatibilities": [
-		{
-			"id": "capeling.icon_profile_2.2",
-			"version": "*",
-			"importance": "superseded"
-		}
+	"version": "v1.3.0",
+	"id": "capeling.icon_profile",
+	"name": "Profile Icon",
+	"developers": [
+		"Capeling",
+		"DasshuDev"
 	],
+	"description": "Turns the profile icon into your player icon!",
+	"links": {
+		"source": "https://github.com/DasshuDev/Icon-Profile",
+		"community": "https://discord.gg/F94qat6N3D",
+		"homepage": "https://dasshu.dev"
+	},
 	"settings": {
 		"animations":{
 			"type": "bool",
-			"default": true,
-			"name": "Animations",
-			"description": "Adds the idle animation to the spider and robot"
+			"name": "Idle Animations",
+			"description": "Enables the idle animations for the spider and robot",
+			"default": true
 		}
 	}
 }

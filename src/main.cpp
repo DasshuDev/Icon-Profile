@@ -25,27 +25,28 @@ class $modify(MenuLayer) {
 		if(!MenuLayer::init())
 			return false;
 		
-		auto gm = GameManager::sharedState();
+		auto manager = GameManager::sharedState();
 
 		auto profileMenu = this->getChildByID("profile-menu");
 
 		SimplePlayer* playerIcon = SimplePlayer::create(0);
-		playerIcon->updatePlayerFrame(getFrameIcon(gm->m_playerIconType), gm->m_playerIconType);
-		playerIcon->setColor(gm->colorForIdx(gm->getPlayerColor()));
-		playerIcon->setSecondColor(gm->colorForIdx(gm->getPlayerColor2()));
-		playerIcon->setGlowOutline(gm->colorForIdx(gm->getPlayerGlowColor()));
-		playerIcon->enableCustomGlowColor(gm->colorForIdx(gm->getPlayerGlowColor()));
-		if(!gm->getPlayerGlow()) playerIcon->disableGlowOutline();
+		playerIcon->updatePlayerFrame(getFrameIcon(manager->m_playerIconType), manager->m_playerIconType);
+		playerIcon->setColor(manager->colorForIdx(manager->getPlayerColor()));
+		playerIcon->setSecondColor(manager->colorForIdx(manager->getPlayerColor2()));
+		playerIcon->setGlowOutline(manager->colorForIdx(manager->getPlayerGlowColor()));
+		playerIcon->enableCustomGlowColor(manager->colorForIdx(manager->getPlayerGlowColor()));
+		if(!manager->getPlayerGlow()) playerIcon->disableGlowOutline();
 
 		playerIcon->setScale(1.15);
 
 		if(Mod::get()->getSettingValue<bool>("animations")) {
-			if(gm->m_playerIconType == IconType::Robot) playerIcon->m_robotSprite->runAnimation("idle01");
-			if(gm->m_playerIconType == IconType::Spider) playerIcon->m_spiderSprite->runAnimation("idle01");
+			if(manager->m_playerIconType == IconType::Robot) playerIcon->m_robotSprite->runAnimation("idle01");
+			if(manager->m_playerIconType == IconType::Spider) playerIcon->m_spiderSprite->runAnimation("idle01");
 		}
 
 		auto profileBtn = as<CCMenuItemSpriteExtra*>(profileMenu->getChildByID("profile-button"));
-		auto profileSpr = getChildOfType<CCSprite>(profileBtn, 0);
+		auto profileSpr = static_cast<CCSprite*>(profileBtn->getChildren()->objectAtIndex(0));
+		profileSpr->setID("profile-icon");
 
 		profileSpr->setDisplayFrame(playerIcon->displayFrame());
 		profileSpr->addChild(playerIcon);
