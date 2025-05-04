@@ -1,15 +1,18 @@
 ## Latest release:
-## <cj>v1.3.0</c>
+## <cj>v1.3.1</c>
+- Bumped to Geode v4.4.0
+
+---
+
+### Previous versions:
+
+### v1.3.0
 - Bumped to 2.2074
 - Bumped to Geode v4.3.1
 - Mod picked up by DasshuDev
 - Ensured compatibility with More Icons by hiimjasmine00
 - Updated the icon
 - Updated the name of the mod to "Profile Icon"
-
----
-
-### Previous versions:
 
 ### v1.2.1
 - Re-added idle animations, now with a setting to toggle them on/off.
