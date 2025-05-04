@@ -1,6 +1,7 @@
 ## Latest release:
 ## <cj>v1.3.1</c>
 - Bumped to Geode v4.4.0
+- iOS support!
 
 ---
 
