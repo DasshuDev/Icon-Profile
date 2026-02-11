@@ -1,5 +1,4 @@
 #include "Geode/binding/CCMenuItemSpriteExtra.hpp"
-#include "Geode/utils/cocos.hpp"
 #include <Geode/Geode.hpp>
 #include <Geode/modify/MenuLayer.hpp>
 

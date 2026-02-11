@@ -7,10 +7,9 @@
 		"ios": "2.2081"
 	},
 	"version": "v1.3.2",
-	"id": "capeling.icon_profile",
+	"id": "dasshu.icon_profile",
 	"name": "Profile Icon",
 	"developers": [
-		"Capeling",
 		"DasshuDev"
 	],
 	"description": "Turns the profile sprite into your icon!",

@@ -1,11 +1,8 @@
-## Latest release:
 ## <cj>v1.3.2</c>
 - Added mod tag(s)
-- 
+- Bump to Geode v5.0.0-alpha.2 and GD 2.2081
 
 ---
-
-### Previous versions:
 
 ### v1.3.1
 - Bumped to Geode v4.4.0

@@ -6,5 +6,5 @@ Permission has been granted by the original developer, Capeling, for me (DasshuD
 ---
 
 ## Credits
-- Mod Icon by [Jay/DasshuDev](https://bsky.app/profile/dasshu.dev)
-- Original mod by [Capeling](https://bsky.app/profile/capeling.bsky.social)
+- Mod Icon by [DasshuDev](https://x.com/dasshudev/)
+- Original mod by [Capeling](https://x.com/capelingg/)
