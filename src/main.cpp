@@ -44,7 +44,7 @@ class $modify(MenuLayer) {
 			if(manager->m_playerIconType == IconType::Spider) playerIcon->m_spiderSprite->runAnimation("idle01");
 		}
 
-		auto profileBtn = as<CCMenuItemSpriteExtra*>(profileMenu->getChildByID("profile-button"));
+		auto profileBtn = static_cast<CCMenuItemSpriteExtra*>(profileMenu->getChildByID("profile-button"));
 		auto profileSpr = static_cast<CCSprite*>(profileBtn->getChildren()->objectAtIndex(0));
 		profileSpr->setID("profile-icon");
 
