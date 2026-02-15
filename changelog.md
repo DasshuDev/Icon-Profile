@@ -1,6 +1,6 @@
-## <cj>v1.3.2</c>
+## <cj>v1.3.3</c>
 - Added mod tag(s)
-- Bump to Geode v5.0.0-alpha.2 and GD 2.2081
+- Bump to Geode v5.0.0-beta.1 and GD 2.2081
 
 ---
 
